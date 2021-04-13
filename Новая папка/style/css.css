@@ -1,0 +1,542 @@
+body{
+	font-family: 'FuturaLightC';
+	margin: 0;
+	max-width: 100%;
+	height: 100%;
+	position: relative;
+	color: #1C1C1F;
+}
+.container{
+	width: 81%;
+	margin: 0 auto;
+	margin-top: 2vh;
+}
+/*header*/
+.header__body{
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+}
+.header__brief{
+	display: flex;
+}
+.header__brief a{
+	margin-top: 1.5vh;
+	text-decoration: none;
+	color: #EC1D2D;
+	font-size: 24px;
+	margin-right: 1vw;
+}
+.header__brief a:hover{
+	text-decoration: underline;
+}
+/*бургер меню*/
+.header__menu{
+	position: absolute;
+	right: 0;
+}
+.header__burger{
+	margin-top: 2vh;
+	width: 25px;
+	height: 13px;
+	position: relative;
+}
+.header__burger:before{
+	content: '';
+	background: #333333;
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	right: 0;
+	top: 0;
+}
+.header__burger:after{
+	content: '';
+	background: #333333;
+	position: absolute;
+	width: 15px;
+	height: 1px;
+	right: 0;
+	bottom: 0;
+}
+.header__burger span{
+	position: absolute;
+	background: #333333;
+	right: 0;
+	width: 100%;
+	height: 1px;
+	top: 6px;
+}
+
+/*language*/
+.language{
+	text-transform: uppercase;
+	color: #1C1C1F;
+	text-align: right;
+	font-weight: 400;
+}
+.language div a{
+	margin: 0;
+	color: #1C1C1F;
+	text-decoration: none;
+}
+.language div a:hover{
+	text-decoration: underline;
+}
+.language div{
+	margin-bottom: 1vh;
+}
+.language div:last-child{
+	margin-bottom: 0;
+}
+/*language end*/
+
+/*частина з текстом*/
+.gose__brief{
+	font-size: 100px;
+}
+.gose__text{
+	font-family: 'Source Sans Pro';
+	font-weight: 300;
+	width: 31vw;
+	font-size: 18px;
+	line-height: 27px;
+	color: #1C1C1F;
+	margin-top: 3vh;
+	margin-bottom: 8vh;
+}
+/*services*/
+.gose__servises{
+	font-size: 48px;
+	line-height: 53px;
+	margin-bottom: 5vh;
+}
+.servises-items{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 45%;
+}
+.servises-items a div:hover{
+	border:1px solid #EC1D2D;
+	color: #EC1D2D;
+}
+.servises-items a div{
+	padding:2vh 2vw 2vh 2vw;
+	border: 1px solid rgba(28, 28, 31, 0.2);
+
+}
+.servises-items a{
+	text-decoration: none;
+	color: #1C1C1F;
+}
+
+/*вопроси?*/
+
+.task input{
+	width: 54vw;
+	border: none;
+	border-bottom: 1px solid rgba(28, 28, 31, 0.2);
+}
+.task-text{
+	margin-top: 8vh;
+	font-size: 48px;
+	margin-bottom: 4vh;
+}
+.task__des-box input:focus ~ label,
+.task__des-box input:valid ~ label{
+	margin-top: -19px;
+	color: rgba(28, 28, 31, 0.5);
+}
+.task__des-box{
+	position: relative;
+}
+.task__des-box label{
+	color: rgba(28, 28, 31, 0.5);
+}
+.task label{
+	position: absolute;
+	left: 0;
+	top: 0;
+	transition: .5s;
+}
+
+.task div input{
+	color: #1C1C1F;
+	font-size: 16px;
+	outline: none;
+}
+.task__button input:hover{
+	background: rgba(196, 196, 196, 0.7);
+	cursor: pointer;
+}
+.task__button input{
+	width: 125px;
+	margin-top: 3vh;
+	margin-bottom: 15vh;
+	border: none;
+	border-radius: 60px;
+	height: 5vh;
+}
+
+.details__title{
+	font-size: 48px;
+	line-height: 52,99px;
+	margin-bottom: 6vh;
+}
+.details__box{
+	margin-bottom: 15vh;
+	display: flex;
+}
+.details__box input{
+	width: 30vw;
+	border: none;
+	border-bottom: 1px solid rgba(28, 28, 31, 0.2);
+	font-size: 24px;
+	font-weight: 300;
+	margin-right: 4vw;
+	outline: none;
+	padding-left: 7px;
+	padding-bottom: 2vh;
+}
+
+
+.details__box div{
+	position: relative;
+}
+.details__box div label
+{
+	position: absolute;
+	left: 7px;
+	top: 0;
+	pointer-events: none;
+	transition: .5s;
+	color: rgba(28, 28, 31, 0.5);
+}
+.details__box input:focus ~ label,
+.details__box input:valid ~ label{
+	top: -16px;
+	font-size: 16px;
+	color: rgba(28, 28, 31, 0.5);
+}
+.found__title{
+	font-size: 3em;
+	margin-top: 15vh;
+	margin-bottom: 8vh;
+}
+.found_box div{
+	border: 1px solid rgba(28, 28, 31, 0.2);
+}
+.found_box{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 50%;
+	font-size: 18px;
+}
+.found_box a{
+	text-decoration: none;
+	color: #1C1C1F;
+}
+.found_box div{
+	padding:2vh 2vw 2vh 2vw;
+}
+.found_box a div:hover{
+	border:1px solid #EC1D2D;
+	color: #EC1D2D;
+}
+.fling{
+	margin: 0 auto;
+	width: 40vw;
+	text-align: center;
+}
+.fling__title{
+	margin-top: 15vh;
+	margin-bottom: 4vh;
+	display: flex;
+	justify-content: center;
+}
+.fling__title a{
+	text-decoration: none;
+	color: #EC1D2D;
+	font-size: 48px;
+	margin-right: 1vw;
+}
+.fling__title a:hover{
+	margin-bottom: -2px;
+	border-bottom: 2px solid #EC1D2D;
+}
+.fling__text{
+	font-family: 'FuturaBookC';
+	margin: 0 auto;
+	font-size: 18px;
+}
+
+
+/*тут адаптив*/
+@media(max-width:1024px){
+	.container{
+		width: 90%;
+	}
+	.servises-items a{
+		margin-bottom: 4vh;
+	}
+}
+@media(max-width:880px){
+	.servises-items{
+		width: 60%;
+	}
+	.found_box{
+		width: 65%;
+	}
+	.task__button input{
+		height: 7vh;
+	}
+	.task__button input{
+		height: 22px;
+	}
+}
+@media(max-width:767px){
+	.container{
+
+	}
+	.language{
+		display: none;
+	}
+	.gose__brief{
+		font-size: 48px;
+		margin-top: 5vh;
+	}
+	.gose__text{
+		width: 100%;
+		font-size: 14px;
+		line-height: 21px;
+	}
+	.gose__servises{
+		font-size: 30px;
+	}
+	.servises-items{
+		justify-content: left;
+		width: 100%;
+	}
+	.servises-items a{
+	margin-right: 8%;
+	}
+	.task-text{
+		font-size: 30px;
+	}
+	.task input{
+		width: 100%;
+	}
+	.task__button input{
+		width: 125px;
+	}
+	.details__title{
+		font-size: 30px;
+	}
+	.details__box{
+		display: block;
+	}
+	.details__box{
+		margin-bottom: 0;
+	}
+	.details__box input{
+		width: 100%;
+		margin-bottom: 4vh;
+	}
+	.found__title{
+		font-size: 30px;
+	}
+	.found_box{
+		width: 100%;
+		justify-content: left;
+	}
+	.found_box a{
+		margin-right: 8%;
+		margin-bottom: 4vh;
+	}
+	.fling__title a{
+		font-size: 30px;
+	}
+	.fling{
+		width: 100%;
+	}
+
+}
+
+/*hovers*/
+/*всі ховери продубльовані тут*/
+.language div a:hover{
+	text-decoration: underline;
+}
+.servises-items a div:hover{
+	border:1px solid #EC1D2D;
+	color: #EC1D2D;
+}
+.task__button input:hover{
+	background: rgba(196, 196, 196, 0.7);
+	cursor: pointer;
+}
+.details__box input:focus ~ label,
+.details__box input:valid ~ label{
+	top: -16px;
+	font-size: 16px;
+	color: rgba(28, 28, 31, 0.5);
+}
+/*ошибка*/
+ .error input:focus ~ label,
+ .error input:valid ~ label{
+	top: -16px;
+	font-size: 16px;
+	color: #EC1D2D;
+	margin-top: -1px;
+	border-bottom: 1px solid #EC1D2D;
+}
+
+.found_box a div:hover{
+	border:1px solid #EC1D2D;
+	color: #EC1D2D;
+}
+.fling__title a:hover{
+	margin-bottom: -1px;
+	border-bottom: 1px solid #EC1D2D;
+}
+.fling__title a:hover{
+	margin-bottom: -2px;
+	border-bottom: 2px solid #EC1D2D;
+}
+/*при text-decoration дуже жирна лінія получалася, зробив як бордер*/
+
+
+
+/*тут стилізація попапів*/
+.button{
+	width: 30%;
+	margin: 0 auto;
+	height: 7vh;
+	line-height: 40px;
+	color: #FFFFFF;
+	font-size: 30px;
+	background: #FF5252;
+	margin-top: 10vh;
+	cursor: pointer;
+	text-align: center;
+
+}
+.popup__wreaper{
+	display: flex;
+	max-width: 100%;
+	background: #FFF;
+}
+
+.popup__photo{
+	max-width: 100%;
+	float: right;
+}
+.popup__box{
+	max-width: 45%;
+	margin-top: 9%;
+	margin-left: 5vw;
+}
+.popup__title{
+	font-size: 100px;
+}
+.popup__gose{
+	font-family: 'Source Sans Pro';
+	line-height: 150%;
+	margin-top: 6vh;
+	margin-bottom: 18vh;
+}
+.js-close-compaign{
+	font-size: 48px;
+	line-height: 53px;
+	text-align: right;
+}
+.js-close-compaign a:hover{
+	border-bottom: 2px solid #EC1D2D;
+}
+.js-close-compaign a{
+	text-decoration: none;
+	color: #EC1D2D
+}
+
+.overlay{
+	position: absolute;
+	width: 100%;
+	min-height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,.7);
+	display: none;
+}
+.popup{
+	position: absolute;
+	width: 100%;
+	height: 600px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+@media(max-width: 767px){
+	.popup__wreaper{
+		display: block;
+	}
+	.popup__photo{
+		height: 320px;
+		width: 100%;
+	}
+	.popup__wreaper{
+		width: 95%;
+		margin: 0 auto;
+	}
+	.popup__box{
+		max-width:97%;
+		margin: 0 auto;
+	}
+	.popup__photo-box{
+		text-align: left;
+	}
+}
+
+
+.errors{
+	max-width: 100%;
+	text-align: center;
+	background:url(../img/svg/inline-vectors.svg) 50% 0 no-repeat, 
+	url(../img/svg/errors-bg.svg) 0 0 no-repeat;
+}
+.number-errors{
+	font-size: 380px;
+	color: #EC1D2D;
+	letter-spacing: 0.05em;
+}
+.not-found{
+	font-family: 'Source Sans Pro';
+	color: #1C1C1F;
+	opacity: 0.5;
+	font-weight: 200;
+	font-size: 18px;
+}
+.errors__home-link{
+	text-decoration: none;
+	color: #EC1D2D;
+	font-size: 48px;
+}
+.errors__box-link{
+	display: inline-block;
+	margin-bottom: 7vh;
+}
+.errors__box-link:hover{
+	border-bottom: 2px solid #EC1D2D;
+}
+@media(max-width: 767px){
+	.number-errors{
+		width:140px;
+	}
+	.not-found{
+		font-size: 14px;
+	}
+	.errors__home-link{
+		font-size: 30px;
+	}
+}
