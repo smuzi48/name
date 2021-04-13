@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="style/css.css">
+	<link rel="stylesheet" type="text/css" href="fonts/futuralightc/futuralightc.css">
+	<link rel="stylesheet" type="text/css" href="fonts/futurabookC/futurabookc.css">
+	<link rel="stylesheet" type="text/css" href="fonts/sourse-sans-pro/source.css">
+
+</head>
+<body>
+	<div class="wreaper">
+		<header class="header">
+			<div class="container">
+				<div class="header__body">				
+					<a href="#!" class="">
+						<img src="img/logo.jpg" alt="">
+					</a>
+					<div class="header__brief">
+						<a href="#">Brief</a>
+					<img src="img/svg/Vector.svg" alt="">
+					</div>
+					<!--початок бургер і меню-->
+					<div class="header__menu">
+					</div>
+					<div class="header__burger">
+						<span></span>
+					</div>
+					<!-- а тут кінець бургер і меню -->
+				</div>
+				
+			</div>
+		</header>
+		<div class="gose">
+			<div class="container">
+				<div class="language">
+					<div class="russian">
+						<a href="#">ru</a>
+					</div>
+					<div class="ukrain">
+						<a href="#">ua</a>
+					</div>
+				</div>
+				<div class="gose__brief">
+					Fill the brief
+				</div>
+				<div class="gose__text">Leave a request or call, we 	will talk and  fill in everything for you:  +7 495 268‑06‑61
+				</div>
+
+				<div class="gose__servises">
+					Services
+				</div>
+
+				<div class="servises-items">
+					<a href="#">
+						<div>
+							UX/UI Designer
+						</div>
+					</a>
+					<a href="#">
+						<div>
+							Branding
+						</div>
+					</a>
+					<a href="#">
+						<div>
+							Mobile apps
+						</div>
+					</a>
+				</div>
+				<div class="task">
+					<div class="task-text">A task</div>
+					<div class="task__des-box">
+						<input type="text" class="question" required="">
+						<label>Deskription</label>
+					</div>
+					<div class="task__button">
+						<input type="submit" value="Attach a file">
+					</div>
+				</div>
+				<div class="details">
+					<div class="details__title">Contact details</div>
+					<div class="details__box">
+						<div>
+							<input type="text" class="name" required="">
+							<label>Name</label>
+						</div>
+						<div>
+							<input type="text" class="mail" required="">
+							<label>E-mail</label>
+						</div>
+					</div>
+					<div class="details__box">
+						<div>
+							<input type="text" class="company" required="">
+							<label>Company</label>
+
+						</div>
+						<div>
+							<input type="text" class="telephone" required="">
+							<label>Phone</label>
+						</div>
+					</div>
+				</div>
+				<div class="found">
+					<div class="found__title">How did you found out about us?</div>
+					<div class="found_box">
+						<a href="#">
+							<div class="recom">
+								Recommendations	
+							</div>
+						</a>
+						<a href="#">
+							<div class="work">
+								Work
+							</div>
+						</a>
+						<a href="#">
+							<div class="media">
+								Social media
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="fling">
+					<div class="fling__title">
+							<a href="#">Send</a>
+							<img src="img/svg/Vector.svg" alt="">
+					</div>
+					<div class="fling__text">By clicking on the button, you  <strong>consent</strong>  to the processing of personal data and agree to the privacy policy.</div>
+				</div>
+			</div>
+		</div>
+		<div class="button js-button-compaign">
+			<span>назва кнопки</span>
+		</div>
+	</div>
+	<!--модальне вікно-->
+	<div class="overlay js-overlay-compaign">
+		<div class="popup js-popup-compaign">
+			<div class="popup__wreaper">
+				<div class="popup__box">
+					<div class="popup__title">Done</div>
+					<div class="popup__gose">Your brief was successfully delivered :)<br> 
+Our designers will do some reseach and within 24 hours the manager will get it touch with you
+					</div>
+					<div class="js-close-compaign">
+						<a href="#">Home <img src="img/svg/Vector.svg"></a>
+					</div>
+				</div>
+				<div class="popup__photo-box">
+					<!--<img src="img/hand-plyne.jpg"class="popup__photo">
+						це друга картинка-->
+					<img src="img/hand-ok.jpg" class="popup__photo">
+				</div>	
+			</div>
+		</div>
+	</div>
+
+
+
+<!-- тут блок з помилкою
+
+	<div class="errors">
+		<div class="number-errors">404</div>
+		<div class="not-found">Oooooops, page not found</div>
+		<div class="errors__box-link">
+			<a href="#" class="errors__home-link">
+			Home page <img src="img/svg/Vector.svg" alt="">
+			</a>
+		</div>
+	</div> -->
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+	<script>
+//модальне вікно
+
+//відкриття по кнопці
+$('.js-button-compaign').click(function(){
+	$('.js-overlay-compaign').fadeIn();
+	$('.js-overlay-compaign').addClass('disabled');
+});
+
+//закрити на хрестик
+$('.js-close-compaign').click(function() {
+	$('.js-overlay-compaign').fadeOut();
+	$('.wreaper').css('filter','none');
+});
+
+//закрити на зовнішній клік
+
+$(document).mouseup(function (e) {
+	var popup = $('.js-popup-compaign');
+	if (e.target!=popup[0]&&popup.has(e.target).length === 0){
+		$('.js-overlay-compaign').fadeOut();
+		$('.wreaper').css('filter','none')
+	}
+});
+
+//відкриття по таймеру
+
+$(window).on('load', function() {
+	setTimeout(function(){
+		if ($('.js-overlay-compaign').hasClass('disabled')) {
+			return false;
+		} else{
+			$(".js-overlay-compaign").fadeIn();
+		}
+	}, 1000);
+});
+	</script>
+	
+</body>
+</html>
